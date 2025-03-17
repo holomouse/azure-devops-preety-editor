@@ -1,0 +1,13 @@
+{
+ "manifest_version": 2,
+ "name": "Azure DevOps pipeline editor improve",
+ "description": "Improved highlighting for Azure DevOps yaml editor",
+ "version": "1.9.0",
+ "content_scripts": [
+ {
+    "matches": ["https://dev.azure.com/*"],
+    "js": ["azure_devops_editor_highlight.user.js"],
+    "run_at": "document-end"
+ }
+ ]
+}
